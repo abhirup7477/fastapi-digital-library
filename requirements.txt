@@ -1,5 +1,2 @@
 fastapi
-typing
-pydantic
-time
-logging
+uvicorn
