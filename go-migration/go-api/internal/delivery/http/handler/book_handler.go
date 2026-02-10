@@ -94,6 +94,7 @@ func (h *BookHandler) UpdateBook(c *gin.Context) {
 	ctx, email := h.UsecaseRequirements(c)
 	if err := h.uc.UpdateBook(ctx, book, email); err != nil {
 		Response.Error(c, http.StatusNotFound, "Id not found", err)
+		return
 	}
 	Response.Success(c, http.StatusOK, "Book updated successfully", book)
 }
