@@ -8,7 +8,7 @@ func CorsConfig() cors.Config {
 			"http://localhost:3000",
 		},
 		AllowMethods:     []string{"GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"},
-		AllowHeaders:     []string{"Origin", "Content-Length", "Content-Type", "Authorization", "Email"},
+		AllowHeaders:     []string{"Origin", "Content-Length", "Content-Type", "Authorization", "Email", "User-Agent-String"},
 		AllowCredentials: true,
 	}
 	return config
